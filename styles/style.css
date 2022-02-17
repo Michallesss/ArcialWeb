@@ -1,0 +1,30 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    /**/
+
+    background-color: orange;
+}
+
+.logo
+{
+    width: 100%;
+
+    background-color: red;
+}
+
+.content
+{
+    width: 100%;
+
+    background-color: green;
+}
+
+.footer
+{
+    width: 100%;
+    text-align: center;
+
+    background-color: red;
+}
