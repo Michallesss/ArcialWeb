@@ -1,30 +1,130 @@
 body
 {
+    /*background-color: orange;*/
+    background-image: url("../img/bg.png");
+    background-attachment: fixed;
+    background-color: #000000;
     margin: 0;
     padding: 0;
     /**/
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
 
-    background-color: orange;
+a
+{
+    color: white;
+    text-decoration: none;
 }
 
 .logo
 {
+    font-size: x-large;
+    background-color: #121212;
+    opacity: 0.8;
     width: 100%;
+    padding: 1% 0 1% 0;
+    text-align: center;
+    transition: all 1s ease-in-out;
+}
 
-    background-color: red;
+.menu
+{
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+    background-color: #0A0A0A;
 }
 
 .content
 {
-    width: 100%;
+    width: 90%;
+    margin: 3% 0 3% 0;
+    padding: 3% 5% 3% 5%;
 
-    background-color: green;
+    background-color: #212121;
 }
 
 .footer
 {
     width: 100%;
     text-align: center;
+    padding: 1% 0 1% 0;
 
-    background-color: red;
+    background-color: #0A0A0A;
+}
+
+ol
+{
+    color: white;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 18px;
+    height: 35px;
+    line-height: 200%;
+    display: block;
+    display: inline-block;
+}
+
+ol > li
+{
+    float: left;
+    width: 150px;
+    height: 40px;
+    border-right: 1px dashed #181818;
+}
+
+ol > li:first-child
+{
+    border-left: 1px dashed #181818;
+}
+
+ol > li:hover
+{
+    background-color: #242526;
+}
+
+ol > li:hover > a
+{
+    color: gray;
+}
+
+ol > li > ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    display: none;
+}
+
+ol > li:hover > ul
+{
+    display: block;
+}
+
+ol > li > ul > li
+{
+    background-color: #3A3B3C;
+    position: relative;
+    z-index: 100;
+    border-top: 1px dashed #181818;
+}
+
+ol > li > ul > li:last-child
+{
+    border-radius: 0px 0px 10px 10px;
+}
+
+ol > li > ul > li:hover
+{
+    background-color: #242526;
+}
+
+ol > li > ul > li:hover > a
+{
+    color: gray;
+    text-decoration: underline;
 }
